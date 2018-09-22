@@ -1,5 +1,6 @@
-The Virtual pets shelter is overrun.
-TO DO list:
+# The Virtual pets shelter is overrun.
+
+## TO DO list:
 
 •	Pets
 	-	Cats			
@@ -28,7 +29,9 @@ organic dogs, two robotic. Might increase, dunno.
 
 8.	Create method to clean cat litterbox.
 
-Notes: Feeding should raise litterbox status and a dog’s need to use the bathroom. If a dog is not taken outside before their bathroom need is over a certain amount, they will make a mess in their cage. If this happens, you must choose to clean dog cages to restore lost health.
+## Notes
+
+Feeding should raise litterbox status and a dog’s need to use the bathroom. If a dog is not taken outside before their bathroom need is over a certain amount, they will make a mess in their cage. If this happens, you must choose to clean dog cages to restore lost health.
 
 Feeding/Watering will be interfaces.
 
