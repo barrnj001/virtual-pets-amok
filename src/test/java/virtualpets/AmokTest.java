@@ -13,14 +13,14 @@ public class AmokTest {
 	List<Pets> pets = new ArrayList<Pets>();
 	@Test
 	public void petShouldHaveName() {
-		OrganicDog testDog = new OrganicDog("Spike");
+		OrganicDog testDog = new OrganicDog("Spike", 0);
 		String testName = testDog.getName();
 		assertThat(testName, is("Spike"));
 
 	}
 	@Test
 	public void shouldBeAbleToAssignType() {
-		OrganicDog testDog = new OrganicDog("Spike");
+		OrganicDog testDog = new OrganicDog("Spike", 0);
 		assertTrue(testDog instanceof OrganicDog);
 	}
 
@@ -38,7 +38,7 @@ public class AmokTest {
 	public void shouldBeAbleToAddPet() {
 		// Arrange
 		
-		OrganicDog dog = new OrganicDog("Johnny");
+		OrganicDog dog = new OrganicDog("Johnny", 0);
 		// Act
 		pets.add(dog);
 		// Assert
@@ -46,7 +46,7 @@ public class AmokTest {
 	}
 	@Test
 	public void shouldBeAbleToHaveOrganicCat() {
-		OrganicCat cat = new OrganicCat("Alex");
+		OrganicCat cat = new OrganicCat("Alex", 0);
 		pets.add(cat);
 		assertTrue(pets.contains(cat));
 		

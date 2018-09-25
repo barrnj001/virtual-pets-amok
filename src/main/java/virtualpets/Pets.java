@@ -1,14 +1,19 @@
 package virtualpets;
 
 public abstract class Pets {
-	private String name;
+	public String name;
+	protected int health = 50;
 
-	Pets(String name) {
+	Pets(String name, int health) {
 		this.name = name;
+		this.health = health;
 	}
 
 	public String getName() {
 		return name;
+	}
+	public int getHealth() {
+		return health;
 	}
 
 }
