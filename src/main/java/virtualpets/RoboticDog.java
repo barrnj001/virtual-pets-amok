@@ -6,6 +6,10 @@ public class RoboticDog extends Robotic implements DoglyManners, TickAttack{
 		super(name, health);
 		
 	}
+	@Override
+	public String toString() {
+		return "Name: " + name + "\tHealth: " + health + "\tOil: " + oil;
+	}
 
 	@Override
 	public void walkDog() {

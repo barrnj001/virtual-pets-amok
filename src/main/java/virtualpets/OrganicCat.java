@@ -3,12 +3,16 @@ package virtualpets;
 public class OrganicCat extends Organic implements OrganicNeeds, TickAttack{
 	private int litterBox = 0;
 
-	OrganicCat(String name, int health) {
-		super(name, health);
+	OrganicCat(String name, int health, int hunger, int bladder, int thirst) {
+		super(name, health, hunger, bladder, thirst);
 
 	}
 	public int getLitter() {
 		return litterBox;
+	}
+	@Override
+	public String toString() {
+		return "Name: " + name + "\tHealth: " + health + "\tHunger: " + hunger + "\tBladder: " + bladder + "\tThirst: " + thirst;
 	}
 
 	@Override

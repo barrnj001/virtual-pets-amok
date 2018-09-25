@@ -3,11 +3,15 @@ package virtualpets;
 public class OrganicDog extends Organic implements OrganicNeeds, DoglyManners, TickAttack {
 	private int cage = 0;
 
-	OrganicDog(String name, int health) {
-		super(name, health);
+	OrganicDog(String name, int health, int hunger, int bladder, int thirst) {
+		super(name, health, hunger, bladder, thirst);
 	}
 	public int getCage() {
 		return cage;
+	}
+	@Override
+	public String toString() {
+		return "Name: " + name + "\tHealth: " + health + "\tHunger: " + hunger + "\tBladder: " + bladder + "\tThirst: " + thirst;
 	}
 	@Override
 	public void relieveSelf() {

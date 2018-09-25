@@ -1,13 +1,17 @@
 package virtualpets;
 
 public abstract class Organic extends Pets{
-	
-	Organic(String name, int health) {
-		super(name, health);
-	}
 	protected int hunger = 20;
 	protected int bladder = 20;
 	protected int thirst = 20;
+
+	
+	Organic(String name, int health, int hunger, int bladder, int thirst) {
+		super(name, health);
+		this.hunger = hunger;
+		this.bladder = bladder;
+		this.thirst = thirst;
+	}
 
 
 	public void feedPet() {
