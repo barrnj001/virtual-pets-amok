@@ -11,7 +11,7 @@ public class ShelterTest {
 	Shelter shelter = new Shelter();
 	@Test
 	public void shouldBeAbleToAddPets() {
-		OrganicDog dog = new OrganicDog("max", 0);
+		OrganicDog dog = new OrganicDog("max", 0, 0, 0, 0);
 		RoboticCat cat = new RoboticCat("machi", 1);
 		shelter.addPet(cat);
 		String catName = cat.getName();
@@ -21,8 +21,8 @@ public class ShelterTest {
 	}
 	@Test
 	public void shouldBeAbleToFeedPets() {
-		OrganicDog dog = new OrganicDog("max", 0);
-		OrganicCat cat = new OrganicCat("alex", 0);
+		OrganicDog dog = new OrganicDog("max", 0, 0, 0, 0);
+		OrganicCat cat = new OrganicCat("alex", 0, 0, 0, 0);
 		shelter.addPet(dog);
 		shelter.addPet(cat);
 		int dogHungerBefore = dog.getHunger();
@@ -33,10 +33,6 @@ public class ShelterTest {
 		assertThat(dogHungerBefore, lessThan(dogHungerAfter));
 		assertThat(catHungerBefore, lessThan(catHungerAfter));
 		//HOt!!!
-	}
-	@Test
-	public void shouldBeAbleToOilAllPets() {
-		
 	}
 
 }

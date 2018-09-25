@@ -16,4 +16,9 @@ public abstract class Pets {
 		return health;
 	}
 
+	public void lowerHealth() {
+		health -= 2;
+		
+	}
+
 }

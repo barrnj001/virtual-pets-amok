@@ -13,8 +13,8 @@ public abstract class Robotic extends Pets {
 	}
 
 	public void oilPet() {
-		oil += 10;
-		health += 10;
+		oil += 30;
+		health += 40;
 	}
 
 }
